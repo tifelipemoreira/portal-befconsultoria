@@ -1,16 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../components/layout/navbar'
+import Footer from '../components/layout/footer'
+import PropTypes from 'prop-types';
+import Icones from '../components/icons'
 
 export default function Home() {
+  const socialLinks = Icones  
+  const footer = {socialLinks}
+  const footerMenus = {}
+  console.log(footer)
   return (
     <div >
       <Navbar></Navbar>
-      <div className='fixed bottom-0 left-0 top-0'>
-      <Footer ></Footer>
+        <Footer footer={footer} footerMenus={footerMenus} />
       </div>
-    </div>
+    // </div>
   )
 }

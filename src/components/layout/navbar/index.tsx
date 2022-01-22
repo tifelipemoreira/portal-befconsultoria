@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
-import { IconX, IconMenu } from "../components/icons";
-import Image from "next/image";
-import Logo from "../public/streamlineLogo.png";
+import { IconX, IconMenu } from "../../icons";
 
-function Navbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
@@ -171,4 +169,3 @@ function Navbar() {
   );
 }
 
-export default Navbar;

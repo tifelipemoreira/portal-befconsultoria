@@ -1,3 +1,9 @@
+
+import  {Facebook} from './Facebook'
+import  {Instagram}  from './Instagram';
+import  {SearchIcon} from './SearchIcon';
+import  {Youtube}  from './Youtube';
+
 export const IconHome = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -84,3 +90,6 @@ export const IconX = (
     />
   </svg>
 );
+
+const Icones = [{Facebook},{Instagram},{Youtube},{SearchIcon}]
+export default  Icones 
