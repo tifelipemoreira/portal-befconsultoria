@@ -91,5 +91,4 @@ export const IconX = (
   </svg>
 );
 
-const Icones = [{Facebook},{Instagram},{Youtube},{SearchIcon}]
-export default  Icones 
+ 
