@@ -1,5 +1,5 @@
 import {isEmpty, isArray} from 'lodash';
-import {sanitize} from '../../../utils/miscellaneous';
+//import {sanitize} from '../../../utils/miscellaneous';
 import Link from 'next/link';
 import NewsletterSubscribe from './NewsletterSubscribe';
 
@@ -11,12 +11,12 @@ export default function Footer ( {footer, footerMenus} )  {
 
 				{/*Widget One*/}
 				<div className="my-1 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">
-					<div dangerouslySetInnerHTML={{ __html: sanitize( footer?.sidebarOne ) }}/>
+					{/* <div dangerouslySetInnerHTML={{ __html: sanitize( footer?.sidebarOne ) }}/> */}
 				</div>
 
 				{/*Widget Two*/}
 				<div className="my-1 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">
-					<div dangerouslySetInnerHTML={{ __html: sanitize( footer?.sidebarTwo ) }}/>
+					{/* <div dangerouslySetInnerHTML={{ __html: sanitize( footer?.sidebarTwo ) }}/> */}
 				</div>
 
 				<div className="my-1 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { sanitize } from '../../../utils/miscellaneous'
+//import { sanitize } from '../../../utils/miscellaneous'
 import Loading from '../../loading';
 
 const NewsletterForm = ( { status, message, onValidated }) => {
@@ -55,10 +55,10 @@ const NewsletterForm = ( { status, message, onValidated }) => {
     }
     const result = message?.split('-') ?? null;
     if ( "0" !== result?.[0]?.trim() ) {
-      return sanitize(message);
+      return (message);
     }
     const formattedMessage = result?.[1]?.trim() ?? null;
-    return formattedMessage ? sanitize( formattedMessage ) : null;
+    return formattedMessage ? ( formattedMessage ) : null;
   }
 
   return (
