@@ -4,7 +4,7 @@ import Link from 'next/link';
 import NewsletterSubscribe from './NewsletterSubscribe';
 
 export default function Footer ( {footer, footerMenus} )  {
-	console.log(footer.Facebook)
+	//console.log(footer.Facebook)
 	return (
 		<footer className="bg-blue-900 p-4 bottom-0 fixed w-screen" >
 			<div className="flex flex-wrap -mx-1 overflow-hidden text-white ">
@@ -45,7 +45,7 @@ export default function Footer ( {footer, footerMenus} )  {
 				<div className="w-full lg:w-3/4 flex justify-end">
 					{ ! isEmpty( footer?.socialLinks ) && isArray( footer?.socialLinks ) ? (
 						<ul className="flex items-center">
-							{console.log(footer.socialLinks)}
+							
 							{ footer.socialLinks.map( socialLink => (
 								<li key={ socialLink?.iconName } className="ml-4">
 									<a href={socialLink?.iconUrl}>

@@ -7,7 +7,7 @@ export default function Home() {
   const socialLinks = Icones  
   const footer = {socialLinks}
   const footerMenus = {}
-  console.log(footer)
+  //console.log(footer)
   return (
     <div >
       <Navbar></Navbar>
