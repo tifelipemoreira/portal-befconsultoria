@@ -45,14 +45,13 @@ export default function Footer ( {footer, footerMenus} )  {
 				<div className="w-full lg:w-3/4 flex justify-end">
 					{ ! isEmpty( footer?.socialLinks ) && isArray( footer?.socialLinks ) ? (
 						<ul className="flex items-center">
-							
-							{ footer.socialLinks.map( socialLink => (
+							{/* { footer.socialLinks.map( socialLink => (
 								<li key={ socialLink?.iconName } className="ml-4">
 									<a href={socialLink?.iconUrl}>
 										{ ( socialLink?.iconName ) }
 									</a>
 								</li>
-							) ) }
+							) ) } */}
 						</ul>
 					) : <ul><li>nao é</li></ul> }
 				</div>
