@@ -89,7 +89,7 @@ const NewsletterForm = ( { status, message, onValidated }) => {
           />
         ) : null }
         {'success' === status && 'error' !== status && !error && (
-          <div className="text-green-200 font-bold pt-2" dangerouslySetInnerHTML={{ __html: sanitize(message) }} />
+          <div className="text-green-200 font-bold pt-2" dangerouslySetInnerHTML={{ __html: (message) }} />
         )}
       </div>
     </div>
